@@ -1,0 +1,10 @@
+draw_text(x,y,string(ds_list_size(_enemyDatabase)));
+var _map = ds_list_find_value(_enemyDatabase,0);
+var _map1 = ds_list_find_value(_enemyDatabase,1);
+var _name = ds_map_find_value(_map,Enemy.name);
+var _name1 = ds_map_find_value(_map1,Enemy.name);
+var _map2 = ds_list_find_value(_enemyDatabase,2);
+var _name2 = ds_map_find_value(_map2,Enemy.race);
+draw_text(x,y+16,_name);
+draw_text(x+64,y+16,_name1);
+draw_text(x+128,y+16,_name2);

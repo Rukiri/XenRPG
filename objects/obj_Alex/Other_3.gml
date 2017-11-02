@@ -1,0 +1,1 @@
+RPGState_destroy();
